@@ -1,4 +1,5 @@
 # PLAYDEX
 Loja de Jogos
 
-![Logo Playdex](./a64ada9f-1a11-4053-9d80-72c1638b28b1.png)
+![Logo Playdex](![Captura de tela 2025-06-09 200157](https://github.com/user-attachments/assets/8c323b24-fabd-4fee-9f76-3ebfd61083cf)
+
