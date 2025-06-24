@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>PlayDex - Encontre seus Jogos</title>
-  <link rel="stylesheet" href="2.css" />
-</head>
-<body>
-  <header>
-    <h1>🎮 PlayDex</h1>
-  </header>
 
-  <main>
-    <section class="search-section">
-      <input type="text" id="searchInput" placeholder="Digite o nome do jogo..." />
-      <select id="platformFilter">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PlayDex - Encontre seus Jogos</title>
+    <link rel="stylesheet" href="2.css" />
+</head>
+
+<body>
+    <header>
+        <h1>🎮 PlayDex</h1>
+    </header>
+
+    <main>
+        <section class="search-section">
+            <input type="text" id="searchInput" placeholder="Digite o nome do jogo..." />
+            <select id="platformFilter">
         <option value="">Todas as Plataformas</option>
         <option value="PC">PC</option>
         <option value="PlayStation 4">PlayStation 4</option>
@@ -26,12 +28,14 @@
         <option value="iOS">iOS</option>
         <option value="Android">Android</option>
       </select>
-      <button onclick="searchGame()">Buscar</button>
-    </section>
+            <button onclick="searchGame()">Buscar</button>
+        </section>
 
-    <section id="results" class="results-section"></section>
-  </main>
+        <section id="results" class="results-section"></section>
+    </main>
 
-  <script src="script.js"></script>
+    <script src="jogos.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
