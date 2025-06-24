@@ -15,7 +15,6 @@ O sistema permite buscar e filtrar jogos digitais por título e plataforma, simu
 - HTML5  
 - CSS3  
 - JavaScript  
-- JSON (base de dados local)  
 - Extensão Live Server do Visual Studio Code
 
 ## Estruturas e conceitos aplicados
@@ -26,8 +25,7 @@ O sistema permite buscar e filtrar jogos digitais por título e plataforma, simu
 
 ## Como executar
 
-1. Instale a extensão Live Server no VSCode.
-2. Abra a pasta do projeto no Visual Studio Code.
-3. Clique com o botão direito sobre o arquivo `1.html`.
-4. Selecione a opção "Open with Live Server".
-5. A aplicação será aberta automaticamente no navegador.
+1. Clone o repositorio
+2. Abra a pasta do repositorio
+3.Execute o arquivo `1.html`.
+4. A aplicação será aberta automaticamente no navegador.
