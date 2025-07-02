@@ -14,23 +14,25 @@ header {
 .search-section {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 30px 20px;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
-input[type="text"] {
-  padding: 10px;
-  font-size: 16px;
-  width: 300px;
-  border-radius: 4px;
-  border: none;
-}
-
+input[type="text"],
+input[type="url"],
 select {
   padding: 10px;
   font-size: 16px;
   border-radius: 4px;
   border: none;
+  background-color: #333;
+  color: #f0f0f0;
+}
+
+input::placeholder {
+    color: #888;
 }
 
 button {
@@ -41,15 +43,42 @@ button {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
 button:hover {
   background-color: #00bfa5;
 }
 
+/* Estilos da Seção de Gerenciamento */
+.management-section {
+    background-color: #1f1f1f;
+    padding: 20px;
+    margin: 0 40px 20px 40px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.management-section h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#addGameForm {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#addGameForm input {
+    flex-grow: 1;
+    min-width: 200px;
+}
+
 .results-section {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 20px;
   padding: 20px 40px;
   justify-items: center;
@@ -66,6 +95,9 @@ button:hover {
   color: #f0f0f0;
   text-align: center;
   transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .game-card:hover {
@@ -91,3 +123,17 @@ button:hover {
   color: #a0a0a0;
 }
 
+/* Botão de Remover */
+.remove-btn {
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #cf6679;
+    color: black;
+    width: 100%;
+}
+
+.remove-btn:hover {
+    background-color: #b00020;
+    color: white;
+}
