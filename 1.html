@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>PlayDex - Encontre seus Jogos</title>
+    <title>PlayDex - Encontre e Gerencie seus Jogos</title>
     <link rel="stylesheet" href="2.css" />
 </head>
 
@@ -17,18 +17,29 @@
         <section class="search-section">
             <input type="text" id="searchInput" placeholder="Digite o nome do jogo..." />
             <select id="platformFilter">
-        <option value="">Todas as Plataformas</option>
-        <option value="PC">PC</option>
-        <option value="PlayStation 4">PlayStation 4</option>
-        <option value="PlayStation 5">PlayStation 5</option>
-        <option value="PlayStation 4/5">PlayStation 4/5</option>
-        <option value="Xbox One">Xbox One</option>
-        <option value="Xbox Series X/S">Xbox Series X/S</option>
-        <option value="Nintendo">Nintendo</option>
-        <option value="iOS">iOS</option>
-        <option value="Android">Android</option>
-      </select>
+                <option value="">Todas as Plataformas</option>
+                <option value="PC">PC</option>
+                <option value="PlayStation 4">PlayStation 4</option>
+                <option value="PlayStation 5">PlayStation 5</option>
+                <option value="PlayStation 4/5">PlayStation 4/5</option>
+                <option value="Xbox One">Xbox One</option>
+                <option value="Xbox Series X/S">Xbox Series X/S</option>
+                <option value="Nintendo">Nintendo</option>
+                <option value="iOS">iOS</option>
+                <option value="Android">Android</option>
+            </select>
             <button onclick="searchGame()">Buscar</button>
+        </section>
+
+        <section class="management-section">
+            <h2>Gerenciamento de Jogos</h2>
+            <form id="addGameForm">
+                <input type="text" id="gameTitle" placeholder="Título do Jogo" required>
+                <input type="text" id="gameGenre" placeholder="Gênero" required>
+                <input type="text" id="gamePlatform" placeholder="Plataforma(s)" required>
+                <input type="url" id="gameImage" placeholder="URL da Imagem" required>
+                <button type="submit">Adicionar Jogo</button>
+            </form>
         </section>
 
         <section id="results" class="results-section"></section>
